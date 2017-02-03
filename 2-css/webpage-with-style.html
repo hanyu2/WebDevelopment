@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Webpage With Style</title>
+		<style type="text/css">
+			p{
+				color:blue;
+				font-size:200%;
+			}
+			.red{
+				color:red;
+			}
+			.large{
+				font-size:400%
+			}
+			#green{/*id used once perpage*/
+				color:green;
+			}
+			.underlined{
+				text-decoration: underline;
+			}
+			#first-section{
+				color:blue;
+				background-color: #CEF6CE;
+				width: 50%;
+				float:right;
+			}
+			#second-section{
+				color:gray;
+				width: 300px;
+				float: left;
+			}
+			.clear-float{
+				clear:both;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="first-section">
+			<p class="red large">Test with css</p>
+			<p>Test with css lalala</p>
+		</div>
+
+		<div id="second-section">
+			<p id="green">Test id <span class="underlined">This text is underlined</span></p>
+			<h1 style="color:gray;font-size:300%">CSS is cool!</h1>
+		</div>
+		<div class="clear-float"></div>
+		<p>This is not floated</p>
+
+	</body>
+</html>
