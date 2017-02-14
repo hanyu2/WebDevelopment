@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Text styles</title>
+	</head>
+	<link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
+	<style type="text/css">
+		p{
+			font-family: 'Barrio', cursive;
+		}
+		.bold{
+			font-weight: bold;
+		}
+		.italic{
+			font-style: italic;
+		}
+		a{
+			text-decoration: none;
+		}
+		a:hover{
+			color: green;
+			text-decoration: underline;
+		}
+		a:visited{
+			color: #00ff00;
+		}
+		.big{
+			font-size: 200%;
+		}
+		.right{
+			text-align: right;
+		}
+		.centered{
+			text-align: center;
+		}
+		
+		div{
+			background: #CEF6CE;
+			width: 400px;
+		}
+	</style>
+	<body>
+		<p>This is <strong>some</strong> text</p>
+		<p class="bold">this is bold text <span class="italic">Italic text</>></p>
+		<a href="">this is a non-underlined link</a>
+		<p class="big">This is big text</p>
+		<div>
+			<p class="right">This is right in the container</p>
+			<p class="centered">This is centered</p>
+		</div>
+		<a href="http://www.google.com">Google</a>
+		<a href="http://www.google.com" target="_blank">Google in a new tab</a>
+	</body>
+</html>
