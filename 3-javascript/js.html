@@ -6,5 +6,62 @@
 
 	<body>
 		<button onclick="alert('Hi!')">Click me!</button>
+		<p id="text">Hello world</p>
+		<button id="myButton">Change text</button>
+
+		<p id="secondParagraph">Javascript is...</p>
+		<button id="appendButton">append</button>
+
+		<p id="styleText">Javascript is...</p>
+		<button id="styleButton">change sytle</button>
+
+		<input type="text" id="changedText">
+		<button id="textChanger">Change it!</button>
+		<p id="toBeChanged">This is some text</p>
+		<script type="text/javascript">
+			//This is javascript comment
+			document.getElementById("myButton").onclick = function(){
+				alert("button clicked")
+				document.getElementById("text").innerHTML="Hello Han!"
+			}
+		
+			document.getElementById("appendButton").onclick = function(){
+				document.getElementById("secondParagraph").innerHTML=document.getElementById("secondParagraph").innerHTML+"awesome";
+			}
+
+			document.getElementById("styleButton").onclick = function(){
+				document.getElementById("styleText").style.fontSize="50px"
+				document.getElementById("styleText").style.color="red"
+			}
+			document.getElementById("textChanger").onclick=function(){
+				var textEntered = document.getElementById("changedText").value
+				document.getElementById("toBeChanged").innerHTML=textEntered
+			}
+			//Array
+			var array = new Array()
+			array[0]="pizza"
+			array[1]="burger"
+			console.log(array)
+			var tweets=["morning", "today is valentine"]
+			tweets.push("single dog")
+			//remove an element
+			tweets.splice(1, 1)
+			//insert at a specific position
+			tweets.splice(1, 0, "add one item")
+			console.log(tweets)
+
+			var x = 1;
+			if(x == 1){
+
+			}
+
+			function average(a, b){
+				return (a + b) / 2
+			}
+
+			var x1 = 5
+			var x2 = 8
+			alert(average(x1, x2))
+		</script>
 	</body>
 </html>
